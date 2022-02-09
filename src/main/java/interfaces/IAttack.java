@@ -4,5 +4,5 @@ import players.Player;
 
 public interface IAttack {
 
-    public int inflictDamage(Player player);
+    public void inflictDamage(Player player);
 }
