@@ -1,5 +1,8 @@
 package weapons;
 
+import Room.Enemy;
+import players.Player;
+
 public class Axe extends Weapon{
 
     public Axe(int damageInflicted) {
@@ -7,7 +10,7 @@ public class Axe extends Weapon{
         this.setType("Axe");
     }
 
-    public void fight() {
-
+    public void fight(Enemy enemy) {
+        enemy.setHealth(enemy.getHealth()- this.getDamageInflicted());
     }
 }

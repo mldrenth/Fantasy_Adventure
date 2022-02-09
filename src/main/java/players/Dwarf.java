@@ -1,5 +1,6 @@
 package players;
 
+import Room.Enemy;
 import interfaces.IFight;
 
 public class Dwarf extends Warrior{
@@ -8,4 +9,5 @@ public class Dwarf extends Warrior{
         super(name, weapon);
         this.sethP(400);
     }
+
 }
