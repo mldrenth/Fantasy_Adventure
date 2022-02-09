@@ -1,5 +1,7 @@
 package weapons;
 
+import Room.Enemy;
+
 public class Club extends Weapon{
 
     public Club(int damageInflicted) {
@@ -8,7 +10,7 @@ public class Club extends Weapon{
     }
 
 
-    public void fight() {
-
+    public void fight(Enemy enemy) {
+        enemy.setHealth(enemy.getHealth()- this.getDamageInflicted());
     }
 }
